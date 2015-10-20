@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle slider-number'
+      'command': 'slider-number:up'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'slider-number'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'slider-number:up'
+        }
+      ]
+    ]
+  }
+]
