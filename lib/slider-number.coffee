@@ -26,13 +26,15 @@ module.exports =
        number = parseInt( selection, 10 )
        number = number + 1
        editor.insertText("#{number}", {select:true})
-
+       editor.save()
+       
   down: ->
     if editor = atom.workspace.getActiveTextEditor()
        selection = editor.getSelectedText()
        number = parseInt( selection, 10 )
        number = number - 1
        editor.insertText("#{number}", {select:true})
+       editor.save()
 
   bigup: ->
     if editor = atom.workspace.getActiveTextEditor()
@@ -40,6 +42,7 @@ module.exports =
        number = parseInt( selection, 10 )
        number = number + 10
        editor.insertText("#{number}", {select:true})
+       editor.save()
 
   bigdown: ->
     if editor = atom.workspace.getActiveTextEditor()
@@ -47,3 +50,4 @@ module.exports =
        number = parseInt( selection, 10 )
        number = number - 10
        editor.insertText("#{number}", {select:true})
+       editor.save()
