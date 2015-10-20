@@ -9,7 +9,7 @@
     "atom-workspace": "slider-number:up",
     "atom-workspace": "slider-number:down"
   },
-  "repository": "https://github.com/atom/slider-number",
+  "repository": "https://github.com/renatoferreira656/slider-number",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
