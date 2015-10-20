@@ -5,7 +5,10 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "slider-number:down"
+    "atom-workspace": "slider-number:down",
+    "atom-workspace": "slider-number:up",
+    "atom-workspace": "slider-number:big-down",
+    "atom-workspace": "slider-number:big-up"
   },
   "repository": "https://github.com/renatoferreira656/slider-number",
   "license": "MIT",
