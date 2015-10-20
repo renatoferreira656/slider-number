@@ -1,11 +1,16 @@
 {
   "name": "slider-number",
   "main": "./lib/slider-number",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": [ "slider-number:big-up", "slider-number:big-down", "slider-number:down", "slider-number:up" ]
+    "atom-workspace": [
+      "slider-number:big-up",
+      "slider-number:big-down",
+      "slider-number:down",
+      "slider-number:up"
+    ]
   },
   "repository": "https://github.com/renatoferreira656/slider-number",
   "license": "MIT",
