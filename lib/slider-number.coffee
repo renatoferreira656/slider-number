@@ -20,38 +20,19 @@ module.exports =
   deactivate: ->
     @subscriptions.dispose()
 
+  change_number: (num) ->
+      if editor = atom.workspace.getActiveTextEditor()
+         selection = editor.getSelectedText()
+         if !isNaN(selection)
+            number = parseInt( selection, 10 )
+            number = number + num
+            editor.insertText("#{number}", {select:true})
+            editor.save()
   up: ->
-    if editor = atom.workspace.getActiveTextEditor()
-       selection = editor.getSelectedText()
-       if !isNaN(selection)
-          number = parseInt( selection, 10 )
-          number = number + 1
-          editor.insertText("#{number}", {select:true})
-          editor.save()
-
+      @change_number(1)
   down: ->
-    if editor = atom.workspace.getActiveTextEditor()
-       selection = editor.getSelectedText()
-       if !isNaN(selection)
-           number = parseInt( selection, 10 )
-           number = number - 1
-           editor.insertText("#{number}", {select:true})
-           editor.save()
-
+      @change_number(-1)
   bigup: ->
-    if editor = atom.workspace.getActiveTextEditor()
-       selection = editor.getSelectedText()
-       if !isNaN(selection)
-           number = parseInt( selection, 10 )
-           number = number + 10
-           editor.insertText("#{number}", {select:true})
-           editor.save()
-
+      @change_number(10)
   bigdown: ->
-    if editor = atom.workspace.getActiveTextEditor()
-       selection = editor.getSelectedText()
-       if !isNaN(selection)
-           number = parseInt( selection, 10 )
-           number = number - 10
-           editor.insertText("#{number}", {select:true})
-           editor.save()
+      @change_number(-10)
