@@ -1,5 +1,9 @@
-# slider-number package
+# Slider Number
 
-A short description of your package.
+This is an atom plugin for increase and decrease numbers.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+The original idea is based in changing numbers from css files.
+I've created this plugin to work with [LiveReload](https://atom.io/packages/livereload).
+Helping me to change numbers in some pre-determined scale and see the change of CSS fast.
+
+The plugin is published in [Atom Repository](https://atom.io/packages/slider-number)
